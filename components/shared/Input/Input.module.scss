@@ -1,0 +1,43 @@
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 1px solid var(--background-darker);
+  background: rgba(0, 0, 0, 0.25);  
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &:focus-within {
+    outline: 2px solid var(--secondary);
+    > svg {
+      color: var(--secondary);
+    }
+  }
+
+  > input {
+    flex: 1;
+    padding: 0.25rem 0.25rem;
+    background: transparent;
+    border: none;
+    color: var(--primary);
+
+    &::placeholder {
+      color: var(--foreground-darker);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ~ .input {
+    border-radius: 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
