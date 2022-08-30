@@ -36,6 +36,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           </p>
         </footer>
       </div>
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
     </>
   )
 }
