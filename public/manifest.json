@@ -7,5 +7,13 @@
   "orientation": "portrait",
   "background_color": "#282a36",
   "theme_color": "#88e5f9",
-  "splash_pages": null
+  "splash_pages": null,
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }
