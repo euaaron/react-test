@@ -1,6 +1,11 @@
 {
   "name": "react-test",
   "version": "0.1.0",
+  "author": {
+    "name": "Aaron Carneiro",
+    "email": "github@aaroncarneiro.com",
+    "url": "https://aaroncarneiro.com"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
