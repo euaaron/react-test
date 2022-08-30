@@ -26,7 +26,7 @@ const ActiveLink: React.FC<PropsWithChildren<ActiveLinkProps>> = ({ children, hr
   }
 
   return (
-    <a className={isActive ? styles.activeLink : ''} href={href} onClick={handleClick}>
+    <a className={styles.link + ' ' + (isActive ? styles.activeLink : '')} href={href} onClick={handleClick}>
       {children}
     </a>
   )
