@@ -31,7 +31,7 @@ It must be done with **React** and **Typescript** or Flow.
 - [ ] Access Control
 - [ ] A page to test Access Control
 - [ ] A Login button in the Login page
-- [ ] Deploy
+- [x] Deploy
 - [ ] Jsdoc comments
 - [ ] Full code coverage
 - [ ] E2E tests with Cypress
