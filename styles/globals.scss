@@ -10,7 +10,7 @@
   --primary-darker: #4798ce;
   --secondary: #ff79c6;
   --secondary-lighter: #ffb3e6;
-  --secondary-darker: #ff5f80;
+  --secondary-darker: #ff5f80;  
 }
 
 html,
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: var(--secondary-darker);
+    color: var(--secondary-lighter);
   }
 }
 
