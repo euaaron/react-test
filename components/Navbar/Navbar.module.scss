@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  position: sticky;
+  backdrop-filter: blur(16px);
+  background: linear-gradient(180deg, rgba(40, 42, 54, 0.75) 0%, rgba(40, 42, 54, 0) 100%);
+  top: 0;
+  z-index: 1;  
+  
+  > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+
+    > ul {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1rem;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
