@@ -1,6 +1,7 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
+
 import { User } from '@lib/User/model/User'
 import { UserService } from '@lib/User/services/UserService'
-import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
   user?: User | null
@@ -28,12 +29,12 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
 function put(req: NextApiRequest, res: NextApiResponse<Data>) {
   const { user } = req.body || req.query || null
 
-  if (!user) {    
+  if (!user) {
     return res.status(400).json({ error: 'User is required' })
   }
 
   UserService.get(user.username).then(user => {
-    if (user) {      
+    if (user) {
       return res.status(500).json({ error: 'User alredy registered' })
     }
   })
@@ -56,17 +57,24 @@ function remove(req: NextApiRequest, res: NextApiResponse<Data>) {
   })
 }
 
-function get(req: NextApiRequest, res: NextApiResponse<Data>) {
-  const { username } = req.body || req.query || ''
+function get(req: NextApiRequest, res: NextApiResponse) {
+  const { user } = req.body || req.query || ''
 
-  if (username == '') {    
+  if (user == '') {
     return res.status(400).json({ error: 'Username is required' })
   }
 
-  UserService.get(username).then(user => {
-    if (!user) {
+  UserService.get(user)
+    .then(user => {
+      return res.status(200).json({
+        user: {
+          id: user!.id,
+          username: user!.username,
+          createdAt: user!.createdAt,
+        },
+      })
+    })
+    .catch(error => {
       return res.status(404).json({ error: 'User not found' })
-    }
-    return res.status(200).json({ user })
-  })
+    })
 }
