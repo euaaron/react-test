@@ -52,6 +52,7 @@ a {
 body {
   color: var(--foreground);
   background: var(--background);
+
   background-image: radial-gradient(15% 15% at 100% 15%, rgba(94, 148, 252, 0.75) 0%, rgba(248, 248, 242, 0) 100%),
     radial-gradient(25% 25% at 80% 10%, rgba(255, 21, 21, 0.3) 0%, rgba(248, 248, 242, 0) 100%),
     radial-gradient(90.24% 93.32% at 88.33% 10.1%, rgba(214, 108, 252, 0.2) 0%, rgba(248, 248, 242, 0) 100%);
