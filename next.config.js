@@ -5,4 +5,10 @@ const withPWA = require('next-pwa')({
   runtimeCaching,
 })
 
-module.exports = withPWA({ reactStrictMode: true, swcMinify: true })
+const nextConfig = { reactStrictMode: true, swcMinify: true }
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = withPWA(nextConfig)
+} else {
+  module.exports = nextConfig
+}

@@ -13,9 +13,9 @@ It must be done with **React** and **Typescript** or Flow.
 
 ## Their To Do List
 
-- [ ] Login Page
-  - [ ] Username
-  - [ ] Password
+- [x] Login Page
+  - [x] Username
+  - [x] Password
   - [ ] Register Button
 - [x] User Registration page
   - [x] Username
@@ -27,10 +27,10 @@ It must be done with **React** and **Typescript** or Flow.
 
 ## My "Extras" To Do List
 
-- [ ] Authentication API
-- [ ] Access Control
-- [ ] A page to test Access Control
-- [ ] A Login button in the Login page
+- [x] Authentication API
+- [x] Access Control
+- [x] A page to test Access Control
+- [x] A Login button in the Login page
 - [x] Deploy
 - [ ] Jsdoc comments
 - [ ] Full code coverage
