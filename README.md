@@ -13,24 +13,24 @@ It must be done with **React** and **Typescript** or Flow.
 
 ## Their To Do List
 
-- [ ] Login Page
-  - [ ] Username
-  - [ ] Password
+- [x] Login Page
+  - [x] Username
+  - [x] Password
   - [ ] Register Button
-- [ ] User Registration page
-  - [ ] Username
-  - [ ] Password
-  - [ ] Confirm Password
-  - [ ] Add User Button
-  - [ ] Search Box
-  - [ ] List Registered Users
+- [x] User Registration page
+  - [x] Username
+  - [x] Password
+  - [x] Confirm Password
+  - [x] Add User Button
+  - [x] Search Box
+  - [x] List Registered Users
 
 ## My "Extras" To Do List
 
-- [ ] Authentication API
-- [ ] Access Control
-- [ ] A page to test Access Control
-- [ ] A Login button in the Login page
+- [x] Authentication API
+- [x] Access Control
+- [x] A page to test Access Control
+- [x] A Login button in the Login page
 - [x] Deploy
 - [ ] Jsdoc comments
 - [ ] Full code coverage
