@@ -30,7 +30,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "sass": "^1.54.6",
-    "uuidv4": "^6.2.13"
+    "uuidv4": "^6.2.13",
+    "sass": "^1.54.6"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.17.1",

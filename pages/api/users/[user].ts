@@ -29,12 +29,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
 function put(req: NextApiRequest, res: NextApiResponse<Data>) {
   const { user } = req.body || req.query || null
 
-  if (!user) {
+
+  if (!user) {    
     return res.status(400).json({ error: 'User is required' })
   }
 
   UserService.get(user.username).then(user => {
-    if (user) {
+
+    if (user) {      
       return res.status(500).json({ error: 'User alredy registered' })
     }
   })
