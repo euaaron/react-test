@@ -17,13 +17,13 @@ It must be done with **React** and **Typescript** or Flow.
   - [ ] Username
   - [ ] Password
   - [ ] Register Button
-- [ ] User Registration page
-  - [ ] Username
-  - [ ] Password
-  - [ ] Confirm Password
-  - [ ] Add User Button
-  - [ ] Search Box
-  - [ ] List Registered Users
+- [x] User Registration page
+  - [x] Username
+  - [x] Password
+  - [x] Confirm Password
+  - [x] Add User Button
+  - [x] Search Box
+  - [x] List Registered Users
 
 ## My "Extras" To Do List
 
