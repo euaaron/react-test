@@ -1,16 +1,30 @@
 :root {
-  --background: #282a36;
-  --background-lighter: #444650;
-  --background-darker: #161821;
-  --foreground: #f8f8f2;
-  --foreground-lighter: #ffffff;
-  --foreground-darker: #d3d9df;
+  --background: #f8f8f2;
+  --background-lighter: #ffffff;
+  --background-darker: #d3d9df;
+  --foreground: #282a36;
+  --foreground-lighter: #444650;
+  --foreground-darker: #161821;
   --primary: #3eb3eb;
   --primary-lighter: #61c0ff;
   --primary-darker: #4798ce;
   --secondary: #ff79c6;
   --secondary-lighter: #ffb3e6;
-  --secondary-darker: #ff5f80;  
+  --secondary-darker: #ff5f80;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  :root {
+    --background: #282a36;
+    --background-lighter: #444650;
+    --background-darker: #161821;
+    --foreground: #f8f8f2;
+    --foreground-lighter: #ffffff;
+    --foreground-darker: #d3d9df;
+  }
 }
 
 html,
@@ -36,22 +50,14 @@ a {
 }
 
 body {
-  color: var(--background);
-  background: var(--foreground);
+  color: var(--foreground);
+  background: var(--background);
+
   background-image: radial-gradient(15% 15% at 100% 15%, rgba(94, 148, 252, 0.75) 0%, rgba(248, 248, 242, 0) 100%),
     radial-gradient(25% 25% at 80% 10%, rgba(255, 21, 21, 0.3) 0%, rgba(248, 248, 242, 0) 100%),
     radial-gradient(90.24% 93.32% at 88.33% 10.1%, rgba(214, 108, 252, 0.2) 0%, rgba(248, 248, 242, 0) 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: var(--foreground);
-    background: var(--background);
-    background-image: radial-gradient(15% 15% at 100% 15%, rgba(94, 148, 252, 0.75) 0%, rgba(30, 30, 30, 0) 100%),
-    radial-gradient(25% 25% at 80% 10%, rgba(255, 21, 21, 0.3) 0%, rgba(30, 30, 30, 0) 100%),
-    radial-gradient(90.24% 93.32% at 88.33% 10.1%, rgba(214, 108, 252, 0.2) 0%, rgba(30, 30, 30, 0) 100%);
-  }
+a, button {
+  cursor: pointer;
 }

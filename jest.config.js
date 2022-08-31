@@ -19,6 +19,7 @@ module.exports = {
     '^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
     '^@components/(.*)$': '<rootDir>/components/$1',
     '^@styles/(.*)$': '<rootDir>/styles/$1',
+    '^@lib/(.*)$': '<rootDir>/lib/$1',
   },
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/', '<rootDir>/cypress/'],
   testEnvironment: 'jsdom',

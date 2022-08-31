@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border: none;
+  padding: 0.25rem 0.5rem;
+  background: var(--primary);
+  
+  font-weight: 500;
+  color: var(--foreground);
+
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+
+  &:hover {
+    background: var(--primary-lighter);
+    color: var(--background-lighter);
+  }
+
+  &:focus {
+    outline: 2px solid var(--foreground);
+    background: var(--primary-darker);
+    color: var(--background-lighter);    
+  }
+
+  &:disabled {
+    background: var(--background-darker);
+    color: var(--foreground-darker);
+    border-color: var(--background-darker);
+    cursor: not-allowed;
+  }
+}
