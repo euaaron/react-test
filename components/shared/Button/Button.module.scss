@@ -23,4 +23,11 @@
     background: var(--primary-darker);
     color: var(--background-lighter);    
   }
+
+  &:disabled {
+    background: var(--background-darker);
+    color: var(--foreground-darker);
+    border-color: var(--background-darker);
+    cursor: not-allowed;
+  }
 }
