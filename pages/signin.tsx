@@ -57,11 +57,11 @@ const SigIn: NextPage = () => {
       valid = false
     }
 
-    if (username.length < 3) {
+    if (username.length < 2) {
       valid = false
     }
 
-    if (password.length < 6) {
+    if (password.length < 5) {
       valid = false
     }
 
